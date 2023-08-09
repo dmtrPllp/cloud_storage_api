@@ -10,9 +10,7 @@ const REQUEST_COMMON_DATA = (req: RequestWithUser) =>
   )}`;
 
 const REQUEST_PAYLOADS = (req: RequestWithUser) =>
-  `[BODY]: ${JSON.stringify(req.body)} [USER]: ${JSON.stringify(
-    req.headers.user,
-  )}`;
+  `[BODY]: ${JSON.stringify(req.body)}`;
 
 const REQUEST_COOKIES = (req: RequestWithUser) =>
   `[COOKIES]: ${JSON.stringify(req.cookies)}`;
