@@ -7,5 +7,17 @@ export class FileResponse implements File {
   id: number;
 
   @ApiResponseProperty()
-  path: string;
+  fileName: string;
+
+  @ApiResponseProperty()
+  originalName: string;
+
+  @ApiResponseProperty()
+  size: number;
+
+  @ApiResponseProperty()
+  mimeType: string;
+
+  @ApiResponseProperty()
+  userId: number;
 }
